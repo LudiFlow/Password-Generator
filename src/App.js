@@ -1,11 +1,14 @@
+import React from "react";
 import { GlobalStyle } from "./styled";
+import PasswordGenerator from "./components/PasswordGenerator/PasswordGenerator";
 
 function App() {
   return (
-    <>
+    <main>
       <GlobalStyle />
-      <h1>Password Genrator</h1>
-    </>
+      <h2 className="font-color-grey heading">Password Generator</h2>
+      <PasswordGenerator />
+    </main>
   );
 }
 
