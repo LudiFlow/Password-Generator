@@ -1,4 +1,5 @@
 import React from "react";
+import StyledCheckboxes from "./styles";
 
 export default function Button(props) {
   const [buttonOn, setButtonOn] = React.useState(false);
@@ -8,13 +9,13 @@ export default function Button(props) {
   }
 
   return (
-    <div className="button-list">
+    <StyledCheckboxes className="button-list">
       <div
         onClick={buttonToggle}
         id={props.id}
         className={buttonOn ? "checkbox-on" : "checkbox-off"}
       ></div>
       ;<p className="font-color-white">{props.desc}</p>
-    </div>
+    </StyledCheckboxes>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button/Button";
+import Button from "../Checkboxes/Button";
 import PasswordStrength from "../PasswordStrength/PasswordStrength";
 import Password from "../Password/Password";
 import Tippy from "@tippyjs/react";

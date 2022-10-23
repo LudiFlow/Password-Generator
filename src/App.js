@@ -1,5 +1,5 @@
 import React from "react";
-import { GlobalStyle } from "./styled";
+import { GlobalStyle } from "./GlobalStyle";
 import PasswordGenerator from "./components/PasswordGenerator/PasswordGenerator";
 
 function App() {

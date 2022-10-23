@@ -178,27 +178,6 @@ p, label, input, textarea, button {
   height: 20px;
 }
 
-.button-list {
-  display: flex;
-  margin-top: 20px;
-}
-
-.button-list>p {
-  margin-left: 20px;
-}
-
-.bars {
-  display: flex;
-  align-items: center;
-}
-
-.passwordBar {
-  width: 10px;
-  height: 28px;
-  border: 1px solid var(--light-grey);
-  margin-left: 5px;
-}
-
 .tippy-box[data-theme~='grey'] {
   background-color: var(--light-grey);
   color: var(--medium-grey);
