@@ -9,8 +9,20 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
 }
 
+:root {
+  --dark-grey: #24232C;
+  --medium-grey: #817D92;
+  --light-grey: #E6E5EA;
+  --black: #18171F;
+  --green: #A4FFAF;
+  --red: #F64A4A;
+  --orange: #FB7C58;
+  --yellow: #F8CD65;
+}
+
 html, body {
   height: 100%;
+  margin-top: 1rem;
 }
 
 body {
@@ -33,19 +45,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
   isolation: isolate;
-}
-
-
-
-:root {
-  --dark-grey: #24232C;
-  --medium-grey: #817D92;
-  --light-grey: #E6E5EA;
-  --black: #18171F;
-  --green: #A4FFAF;
-  --red: #F64A4A;
-  --orange: #FB7C58;
-  --yellow: #F8CD65;
 }
 
 body {
@@ -120,7 +119,6 @@ p, label, input, textarea, button {
   text-transform: uppercase;
 }
 
-
 .card-background-dark-grey {
   background-color: var(--dark-grey);
 }
@@ -158,24 +156,6 @@ p, label, input, textarea, button {
   background-color: var(--dark-grey);
   border: 1px solid var(--green);
   color: var(--green);
-}
-
-
-.checkbox-off {
-  background-color: var(--dark-grey);
-  border: 2px solid var(--light-grey);
-  width: 20px;
-  height: 20px;
-}
-
-.checkbox-on {
-  background-color: var(--green);
-  border: none;
-  background-image: url("./images/icon-check.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 20px;
-  height: 20px;
 }
 
 .tippy-box[data-theme~='grey'] {
@@ -217,6 +197,12 @@ input[type="range"] {
 
 input[type="range"]:active {
   accent-color: var(--green);
+}
+
+@media only screen and (max-width: 415px) {
+  #password {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 460px) {

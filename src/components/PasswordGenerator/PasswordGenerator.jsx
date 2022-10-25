@@ -37,7 +37,7 @@ export default function PasswordGenerator() {
     <div>
       <div className="card-top card-background-dark-grey">
         <h1 id="password" className="font-color-white">
-          PTx1f5DaFX
+          Generate Password
         </h1>
         <Tippy
           content="Copied"
